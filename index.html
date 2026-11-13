@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=" viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubGuard dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SubGuard</h1>
+        <p>Smart Subscription Tracker</p>
+        </header>
+
+        <main>
+
+            
+              <section class="summary" style="display: block;">
+
+    <div class="card">
+        <h3>Total Subscriptions</h3>
+        <h2 id="total">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Upcoming Expiry</h3>
+        <h2 id="upcoming">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Monthly Spending</h3>
+        <h2 id="spending">₹0</h2>
+    </div>
+
+</section>
+            
+            <section class="Subscription-section">
+
+                <h2>My Subscriptions</h2>
+
+                <button onclick="showForm()">+ Add Subscription</button>
+
+                <form id="subscriptionForm" style="display:none;">
+    <input type="text" id="name" placeholder="Subscription Name" required>
+
+    <input type="number" id="amount" placeholder="Amount in ₹" required>
+
+    <input type="date" id="expiry" required>
+
+    <button type="submit">Save Subscription</button>
+               </form>
+
+                <div id="subscriptionList"></div>
+
+            </section>
+
+                </main>
+
+
+                <script src="script.js"></script>
+            </body>
+            </html>
